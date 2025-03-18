@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private VRChat Client</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            visibility: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="text"></h1>
+    <audio id="audio" muted autoplay>
+        <source src="Audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.body.style.visibility = 'visible';
+                document.querySelector('h1').style.opacity = 1;
+
+                var audio = document.getElementById('audio');
+                audio.muted = false;
+                audio.play();
+
+                var lines = [
+                    "DeepcClient",
+                    "500$ Invitation - $60 per month",
+                    "BAHAHAAHHAAH, you don't have access. XDDDD",
+                    "We are undetected.",
+                    "This shit is fun.",
+                    "Buy hex liftime. -Love9000",
+                    "Imagine getting banned after injection.",
+                    "Imagine say: i'm the dev of vrt and ke. -Minnun",
+                    "Ctrl + C and v = Skid. -Sizzukie",
+                    "You shold buy Fumo X -Tupper",
+                    "Yoooo, CHINA. -Tado",
+                    "I f up femboy every days. -Jarod",
+                ];
+
+                function typeDeleteLine(index) {
+                    var textElement = document.getElementById("text");
+                    var line = lines[index];
+                    var charIndex = 0;
+                    
+                    var typingInterval = setInterval(function() {
+                        textElement.innerHTML += line.charAt(charIndex);
+                        charIndex++;
+                        if (charIndex === line.length) {
+                            clearInterval(typingInterval);
+                            setTimeout(function() {
+                                deleteLine(line.length, index);
+                            }, 1000);
+                        }
+                    }, 150);
+                }
+
+                function deleteLine(length, index) {
+                    var textElement = document.getElementById("text");
+                    var charIndex = length;
+
+                    var deletingInterval = setInterval(function() {
+                        textElement.innerHTML = textElement.innerHTML.slice(0, charIndex - 1);
+                        charIndex--;
+                        if (charIndex === 0) {
+                            clearInterval(deletingInterval);
+                            if (index + 1 < lines.length) {
+                                setTimeout(function() {
+                                    typeDeleteLine(index + 1);
+                                }, 500);
+                            }
+                        }
+                    }, 100);
+                }
+                setTimeout(function() {
+                    typeDeleteLine(0);
+                }, 2000);
+            }, 1000);
+        };
+    </script>
+</body>
+</html>
