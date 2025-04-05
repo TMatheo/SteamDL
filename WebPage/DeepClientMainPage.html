@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="./src/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>- NightWare -</title>
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:title" content="NightWare">
+
+    <!-- Make all text red -->
+    <style>
+        body, p, div, footer, h1, h2, h3, h4, h5, h6, span, a {
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Audio Player -->
+    <audio id="player" loop>
+        <source src="Audio.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        const vAudio = document.getElementById("player");
+        vAudio.volume = 0.3;
+        let hasInit = false;
+
+        function playMusic() {
+            if (!hasInit) {
+                hasInit = true;
+                vAudio.play().catch((e) => console.log("Autoplay blocked:", e));
+            }
+        }
+
+        document.addEventListener('click', playMusic);
+    </script>
+
+    <!-- Particle Container -->
+    <div id="particles-js"></div>
+
+    <!-- Content -->
+    <p class="ontop"></p>
+    <div class="animate center">
+        NightWare forums
+    </div>
+    <div class="animate lower">
+        <p>closed forever. it was a fun moment &lt;3</p>
+    </div>
+    <div class="animate lower">
+        <p>shoutout to the following people:</p>
+    </div>
+    <div class="animate lower">
+        <p>
+            Biscuit • Created, developed, and maintained DeepClient for its entire lifetime (2.5 yrs).<br>
+            Awooochy • Community manager, server helper, and a good friend.<br>
+            נαяσ∂ • Client video creator and good friend.<br>
+            L M K • Client beta tester and good friend.<br>
+            VIKSTORN • Client beta tester and good friend.<br>
+            ukz • Linux femboy/client beta tester and good friend.<br>
+            noname • Linux femboy/client beta tester and good friend.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 NightWare - all rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./src/particles.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: "#ff0000"
+                },
+                shape: {
+                    type: "circle",
+                    stroke: {
+                        width: 0,
+                        color: "#000000"
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false
+                },
+                size: {
+                    value: 3,
+                    random: true
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ff0000",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: "none",
+                    out_mode: "out"
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "grab"
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: "push"
+                    }
+                },
+                modes: {
+                    grab: {
+                        distance: 200,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    attract: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    repulse: {
+                        distance: 100
+                    },
+                    push: {
+                        particles_nb: 4
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
