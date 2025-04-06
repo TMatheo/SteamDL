@@ -1,40 +1,56 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <script src="./src/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="./src/styles.css">
-    <title>- NightWare -</title>
+    <title>NightWare - DeepClient</title>
     <meta property="og:image" content="https://github.com/TMatheo/FileHost/blob/main/DeepClient/ClientIcon.png?raw=true">
-    <meta property="og:description" content="">
-    <meta property="og:title" content="NightWare">
+    <meta property="og:description" content="closed forever. it was a fun moment <3">
+    <meta property="og:title" content="NightWare - DeepClient">
 
     <!-- Make all text red -->
     <style>
         body, p, div, footer, h1, h2, h3, h4, h5, h6, span, a {
             color: red !important;
         }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 8s ease;
+            pointer-events: none;
+        }
+
+            #overlay.show {
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
+    <!-- Black Fade Overlay -->
+    <div id="overlay" class="show"></div>
+
     <!-- Audio Player -->
     <audio id="player" loop>
         <source src="Audio.mp3" type="audio/mp3">
     </audio>
-    <script>
-        const vAudio = document.getElementById("player");
-        vAudio.volume = 0.3;
-        let hasInit = false;
-
-        function playMusic() {
-            if (!hasInit) {
-                hasInit = true;
-                vAudio.play().catch((e) => console.log("Autoplay blocked:", e));
-            }
-        }
-
-        document.addEventListener('click', playMusic);
-    </script>
 
     <!-- Particle Container -->
     <div id="particles-js"></div>
@@ -42,7 +58,7 @@
     <!-- Content -->
     <p class="ontop"></p>
     <div class="animate center">
-        NightWare forums
+        DeepClient
     </div>
     <div class="animate lower">
         <p>closed forever. it was a fun moment &lt;3</p>
@@ -52,99 +68,93 @@
     </div>
     <div class="animate lower">
         <p>
-            Biscuit • Created, developed, and maintained DeepClient for its entire lifetime (4 month).<br>
+            Biscuit &nbsp;• Created, developed, and maintained DeepClient for its entire lifetime (2.5 yrs).<br>
             Awooochy • Community manager, server helper, and a good friend.<br>
-            נαяσ∂ • Client video creator and good friend.<br>
-            L M K • Client beta tester and good friend.<br>
+            נαяσ∂ &nbsp;&nbsp;&nbsp;• Client video creator and good friend.<br>
+            Sephi &nbsp;&nbsp;&nbsp;• Client beta tester and good friend.<br>
+            L M K &nbsp;&nbsp;&nbsp;• Client beta tester and good friend.<br>
             VIKSTORN • Client beta tester and good friend.<br>
-            ukz • Linux femboy/client beta tester and good friend.<br>
-            noname • Linux femboy/client beta tester and good friend.<br>
-            lpcvoid • EACEmulator - This person is a legend and good friend.
+            ukz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• Linux femboy/client beta tester and good friend.<br>
+            noname &nbsp;&nbsp;• Linux femboy/client beta tester and good friend.
         </p>
     </div>
-
+    <div class="animate lower">
+        <p>Thank to all others DC users.</p>
+    </div>
     <!-- Footer -->
     <footer>
-        <p>© 2024 NightWare - all rights reserved.</p>
+        <p>© 2025 NightWare - Da fuck you mean nuh uh.</p>
     </footer>
 
     <!-- Scripts -->
     <script src="./src/particles.js"></script>
     <script>
-        particlesJS("particles-js", {
-            particles: {
-                number: {
-                    value: 80,
-                    density: {
-                        enable: true,
-                        value_area: 800
-                    }
-                },
-                color: {
-                    value: "#ff0000"
-                },
-                shape: {
-                    type: "circle",
-                    stroke: {
-                        width: 0,
-                        color: "#000000"
-                    }
-                },
-                opacity: {
-                    value: 0.5,
-                    random: false
-                },
-                size: {
-                    value: 3,
-                    random: true
-                },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: "#ff0000",
-                    opacity: 0.4,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 6,
-                    direction: "none",
-                    out_mode: "out"
-                }
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: {
-                    onhover: {
-                        enable: true,
-                        mode: "grab"
-                    },
-                    onclick: {
-                        enable: true,
-                        mode: "push"
-                    }
-                },
-                modes: {
-                    grab: {
-                        distance: 200,
+        const overlay = document.getElementById("overlay");
+        const vAudio = document.getElementById("player");
+        let hasInit = false;
+
+        function playMusicAndReveal() {
+            if (!hasInit) {
+                hasInit = true;
+                vAudio.volume = 0.3;
+                vAudio.play().catch((e) => console.log("Autoplay blocked:", e));
+
+                // Fade out overlay
+                overlay.classList.remove("show");
+
+                // Init particles
+                particlesJS("particles-js", {
+                    particles: {
+                        number: { value: 80, density: { enable: true, value_area: 800 } },
+                        color: { value: "#ff0000" },
+                        shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+                        opacity: { value: 1, random: true },
+                        size: { value: 3, random: true },
                         line_linked: {
-                            opacity: 1
+                            enable: true,
+                            distance: 150,
+                            color: "#ff0000",
+                            opacity: 0.5,
+                            width: 5
+                        },
+                        move: {
+                            enable: true,
+                            speed: 6,
+                            direction: "none",
+                            out_mode: "out"
                         }
                     },
-                    attract: {
-                        distance: 200,
-                        duration: 0.4
+                    interactivity: {
+                        detect_on: "canvas",
+                        events: {
+                            onhover: { enable: true, mode: "grab" },
+                            onclick: { enable: true, mode: "push" }
+                        },
+                        modes: {
+                            grab: {
+                                distance: 200,
+                                line_linked: { opacity: 1 }
+                            },
+                            attract: {
+                                distance: 200,
+                                duration: 0.4
+                            },
+                            repulse: { distance: 100 },
+                            push: { particles_nb: 4 }
+                        }
                     },
-                    repulse: {
-                        distance: 100
-                    },
-                    push: {
-                        particles_nb: 4
-                    }
-                }
-            },
-            retina_detect: true
-        });
+                    retina_detect: true
+                });
+            }
+        }
+
+        // Trigger on click
+        document.addEventListener('click', playMusicAndReveal);
+
+        // Fade in the overlay on load
+        window.onload = () => {
+            overlay.classList.add("show");
+        };
     </script>
 </body>
 </html>
