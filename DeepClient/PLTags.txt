@@ -14,4 +14,4 @@ usr_e0afc989-2161-41e1-ae66-0f9ac14b764d|<color=#2A7B9B>s</color><color=#2F819E>
 usr_1f557712-8729-4d1c-acb7-7b065437eba3|will be offline for 2 week starting 25 this month|#ae00d1
 usr_2e3953cc-f469-4b60-8601-73e19301d0c8|<color=#ff0000>E<color=#ff6200>c<color=#ff9d00>h<color=#ffd000>o|#6e004f
 usr_c16a011e-f28c-4863-9cb6-1e2450b948fc|<size=920%>Meprex|#ff0055
-usr_95310629-ff2a-48f0-9d27-856ae112a8d4|That's one furry with osc|#346eeb
+usr_95310629-ff2a-48f0-9d27-856ae112a8d4|<size=320%>That's one furry with osc|#346eeb
