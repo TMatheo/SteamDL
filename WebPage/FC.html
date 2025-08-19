@@ -110,6 +110,15 @@
     z-index: 10;
     transition: width 0.2s ease, height 0.2s ease;
   }
+
+  #start-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: black;
+    display: flex; justify-content: center; align-items: center;
+    color: white; font-size: 2rem; cursor: pointer;
+    z-index: 1000;
+  }
 </style>
 </head>
 <body>
@@ -133,11 +142,14 @@
 
 <div class="bloom-ball" id="bloom-ball"></div>
 
+<div id="start-overlay">Click to Start</div>
+
 <script>
 const video = document.getElementById('video-bg');
 const source = document.getElementById('video-source');
 const overlay = document.getElementById('fade-overlay');
 const bloomBall = document.getElementById('bloom-ball');
+const startOverlay = document.getElementById('start-overlay');
 
 const videos = [
   "https://files.catbox.moe/golu9l.mp4",
@@ -149,7 +161,6 @@ video.load();
 
 let mouseX = window.innerWidth/2, mouseY = window.innerHeight/2;
 let ballX = mouseX, ballY = mouseY;
-let animationStarted = false;
 
 function animate() {
   ballX += (mouseX - ballX) * 0.15;
@@ -161,24 +172,20 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-function startExperience() {
-  if(animationStarted) return;
-  animationStarted = true;
-
-  video.muted = false;
+// Start after user gesture
+startOverlay.addEventListener('click', () => {
+  video.muted = false; // unmute
   video.play().then(() => {
     overlay.style.opacity = 0;
+    startOverlay.style.display = 'none';
   }).catch(err => console.warn("Video play blocked:", err));
-
-  document.removeEventListener('mousemove', startExperience);
   animate();
-}
+});
 
+// Update bloom ball position
 document.addEventListener('mousemove', (e) => {
   mouseX = e.clientX;
   mouseY = e.clientY;
-
-  startExperience();
 });
 </script>
 
