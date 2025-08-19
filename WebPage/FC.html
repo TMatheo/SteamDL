@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FurryCore</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body, html { width: 100%; height: 100%; font-family: Arial, sans-serif; overflow: hidden; cursor: none; }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 6px solid transparent;
+    border-radius: 12px;
+    pointer-events: none;
+    z-index: 100;
+    border-image: linear-gradient(45deg, #ff00ff, #00ffff, #ffcc00, #ff00ff);
+    border-image-slice: 1;
+    animation: borderGlow 6s linear infinite;
+  }
+
+  @keyframes borderGlow {
+    0% { border-image-source: linear-gradient(45deg, #ff00ff, #00ffff, #ffcc00, #ff00ff); }
+    50% { border-image-source: linear-gradient(225deg, #00ffff, #ff00ff, #ffcc00, #00ffff); }
+    100% { border-image-source: linear-gradient(45deg, #ff00ff, #00ffff, #ffcc00, #ff00ff); }
+  }
+
+  .video-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    filter: blur(8px) brightness(1.2);
+    z-index: -1;
+  }
+
+  .fade-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: black;
+    opacity: 1;
+    transition: opacity 3s ease;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .content {
+    position: relative;
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  h1 { 
+    font-size: 3rem; 
+    text-shadow: 0 0 20px rgba(255,255,255,0.7); 
+    position: relative;
+  }
+
+  .invisible-line {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.1rem;
+    color: transparent;
+    pointer-events: none;
+  }
+
+  .buttons { margin-top: 20px; }
+  .buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+  }
+  .buttons a:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255,255,255,0.7);
+  }
+
+  .bloom-ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,200,255,0.3) 40%, rgba(0,0,0,0) 70%);
+    filter: blur(18px) drop-shadow(0 0 15px rgba(255,200,255,0.6));
+    z-index: 10;
+    transition: width 0.2s ease, height 0.2s ease;
+  }
+</style>
+</head>
+<body>
+
+<video id="video-bg" class="video-bg" autoplay muted loop playsinline>
+  <source id="video-source" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<div class="fade-overlay" id="fade-overlay"></div>
+
+<div class="content">
+  <h1>FurryCore
+    <span class="invisible-line">Invisible text line</span>
+  </h1>
+  <div class="buttons">
+    <a href="https://furrycore.sell.app/">Store</a>
+    <a href="#">Forum</a>
+  </div>
+</div>
+
+<div class="bloom-ball" id="bloom-ball"></div>
+
+<script>
+const video = document.getElementById('video-bg');
+const source = document.getElementById('video-source');
+const overlay = document.getElementById('fade-overlay');
+const bloomBall = document.getElementById('bloom-ball');
+
+const videos = [
+  "https://files.catbox.moe/golu9l.mp4",
+  "https://files.catbox.moe/h37qx1.mp4",
+  "https://files.catbox.moe/3l4gdl.mp4"
+];
+source.src = videos[Math.floor(Math.random() * videos.length)];
+video.load();
+
+let mouseX = window.innerWidth/2, mouseY = window.innerHeight/2;
+let ballX = mouseX, ballY = mouseY;
+let animationStarted = false;
+
+function animate() {
+  ballX += (mouseX - ballX) * 0.15;
+  ballY += (mouseY - ballY) * 0.15;
+  bloomBall.style.transform = `translate(${ballX}px, ${ballY}px) translate(-50%, -50%)`;
+  const scale = 1 + 0.1 * Math.sin(Date.now() * 0.005);
+  bloomBall.style.width = `${50 * scale}px`;
+  bloomBall.style.height = `${50 * scale}px`;
+  requestAnimationFrame(animate);
+}
+
+function startExperience() {
+  if(animationStarted) return;
+  animationStarted = true;
+
+  video.muted = false;
+  video.play().then(() => {
+    overlay.style.opacity = 0;
+  }).catch(err => console.warn("Video play blocked:", err));
+
+  document.removeEventListener('mousemove', startExperience);
+  animate();
+}
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+
+  startExperience();
+});
+</script>
+
+</body>
+</html>
