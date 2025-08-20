@@ -34,6 +34,8 @@
     object-fit: cover;
     filter: blur(8px) brightness(1.2);
     z-index: -1;
+    opacity: 0;
+    transition: opacity 2s ease;
   }
 
   .fade-overlay {
@@ -96,21 +98,6 @@
     box-shadow: 0 0 15px rgba(255,255,255,0.7);
   }
 
-  .bloom-ball {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,200,255,0.3) 40%, rgba(0,0,0,0) 70%);
-    filter: blur(18px) drop-shadow(0 0 15px rgba(255,200,255,0.6));
-    z-index: 10;
-    transition: width 0.2s ease, height 0.2s ease;
-  }
-
   #start-overlay {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -118,12 +105,42 @@
     display: flex; justify-content: center; align-items: center;
     color: white; font-size: 2rem; cursor: pointer;
     z-index: 1000;
+    transition: opacity 1.5s ease;
+  }
+
+  /* Small white cursor bloom */
+  #cursor-bloom {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.7);
+    box-shadow: 0 0 8px rgba(255,255,255,0.5), 0 0 16px rgba(255,255,255,0.3);
+    transition: background 0.2s;
+    z-index: 2000;
+  }
+
+  /* Snowflakes */
+  .snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 10px;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1500;
+    opacity: 0.8;
+    text-shadow: 0 0 5px white;
   }
 </style>
 </head>
 <body>
 
-<video id="video-bg" class="video-bg" autoplay muted loop playsinline>
+<video id="video-bg" class="video-bg" loop playsinline>
   <source id="video-source" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -140,16 +157,16 @@
   </div>
 </div>
 
-<div class="bloom-ball" id="bloom-ball"></div>
+<div id="start-overlay">Click to enter &hearts;</div>
 
-<div id="start-overlay">Click to Start</div>
+<div id="cursor-bloom"></div>
 
 <script>
 const video = document.getElementById('video-bg');
 const source = document.getElementById('video-source');
 const overlay = document.getElementById('fade-overlay');
-const bloomBall = document.getElementById('bloom-ball');
 const startOverlay = document.getElementById('start-overlay');
+const cursor = document.getElementById('cursor-bloom');
 
 const videos = [
   "https://files.catbox.moe/golu9l.mp4",
@@ -159,34 +176,74 @@ const videos = [
 source.src = videos[Math.floor(Math.random() * videos.length)];
 video.load();
 
-let mouseX = window.innerWidth/2, mouseY = window.innerHeight/2;
-let ballX = mouseX, ballY = mouseY;
-
-function animate() {
-  ballX += (mouseX - ballX) * 0.15;
-  ballY += (mouseY - ballY) * 0.15;
-  bloomBall.style.transform = `translate(${ballX}px, ${ballY}px) translate(-50%, -50%)`;
-  const scale = 1 + 0.1 * Math.sin(Date.now() * 0.005);
-  bloomBall.style.width = `${50 * scale}px`;
-  bloomBall.style.height = `${50 * scale}px`;
-  requestAnimationFrame(animate);
-}
-
-// Start after user gesture
 startOverlay.addEventListener('click', () => {
-  video.muted = false; // unmute
   video.play().then(() => {
     overlay.style.opacity = 0;
-    startOverlay.style.display = 'none';
+    startOverlay.style.opacity = 0;
+    video.style.opacity = 1;
+    setTimeout(() => startOverlay.style.display = 'none', 1500);
   }).catch(err => console.warn("Video play blocked:", err));
-  animate();
 });
 
-// Update bloom ball position
-document.addEventListener('mousemove', (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-});
+// Cursor bloom
+let mouseX = 0, mouseY = 0;
+let bloomX = 0, bloomY = 0;
+let targetSize = 20;
+
+document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+document.addEventListener('mousedown', () => targetSize = 30);
+document.addEventListener('mouseup', () => targetSize = 20);
+
+function animateBloom() {
+  bloomX += (mouseX - bloomX) * 0.15;
+  bloomY += (mouseY - bloomY) * 0.15;
+  cursor.style.left = bloomX + 'px';
+  cursor.style.top = bloomY + 'px';
+  const currentWidth = parseFloat(cursor.style.width) || 20;
+  const currentHeight = parseFloat(cursor.style.height) || 20;
+  cursor.style.width = currentWidth + (targetSize - currentWidth) * 0.2 + 'px';
+  cursor.style.height = currentHeight + (targetSize - currentHeight) * 0.2 + 'px';
+  requestAnimationFrame(animateBloom);
+}
+animateBloom();
+
+// Snow effect
+const snowflakes = [];
+const maxSnow = 50;
+
+function createSnowflake() {
+  const snow = document.createElement('div');
+  snow.className = 'snowflake';
+  snow.innerText = '❄'; // snow emoji
+  snow.style.left = Math.random() * window.innerWidth + 'px';
+  snow.style.fontSize = 5 + Math.random() * 10 + 'px';
+  snow.style.opacity = 0.5 + Math.random() * 0.5;
+  document.body.appendChild(snow);
+  snowflakes.push({
+    el: snow,
+    x: parseFloat(snow.style.left),
+    y: -10,
+    speed: 1 + Math.random() * 2,
+    drift: (Math.random() - 0.5) * 1.5
+  });
+}
+
+for(let i=0;i<maxSnow;i++) createSnowflake();
+
+function animateSnow() {
+  snowflakes.forEach(f => {
+    f.y += f.speed;
+    f.x += f.drift;
+    if(f.y > window.innerHeight) {
+      f.y = -10;
+      f.x = Math.random() * window.innerWidth;
+    }
+    f.el.style.top = f.y + 'px';
+    f.el.style.left = f.x + 'px';
+  });
+  requestAnimationFrame(animateSnow);
+}
+animateSnow();
 </script>
 
 </body>
