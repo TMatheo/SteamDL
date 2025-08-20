@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FurryCore Store</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body, html { width: 100%; height: 100%; font-family: Arial, sans-serif; overflow: hidden; cursor: none; }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 6px solid transparent;
+    border-radius: 12px;
+    pointer-events: none;
+    z-index: 100;
+    border-image: linear-gradient(45deg, #ff00ff, #00ffff, #ffcc00, #ff00ff);
+    border-image-slice: 1;
+    animation: borderGlow 6s linear infinite;
+  }
+
+  @keyframes borderGlow {
+    0% { border-image-source: linear-gradient(45deg, #ff00ff, #00ffff, #ffcc00, #ff00ff); }
+    50% { border-image-source: linear-gradient(225deg, #00ffff, #ff00ff, #ffcc00, #00ffff); }
+    100% { border-image-source: linear-gradient(45deg, #ff00ff, #00ffff, #ffcc00, #ff00ff); }
+  }
+
+  .video-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    filter: blur(8px) brightness(1.2);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 2s ease;
+  }
+
+  .fade-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: black;
+    opacity: 1;
+    transition: opacity 3s ease;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .content {
+    position: relative;
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    z-index: 1;
+    padding: 20px;
+  }
+
+  h1 { 
+    font-size: 3rem; 
+    text-shadow: 0 0 20px rgba(255,255,255,0.7); 
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+
+  .products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .product {
+    perspective: 1000px; /* enable 3D perspective */
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.4);
+    border-radius: 12px;
+    width: 220px;
+    overflow: hidden;
+  }
+
+  .product-inner {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+  }
+
+  .product img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    font-weight: bold;
+  }
+
+  .stock {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff4444;
+    margin-bottom: 12px;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+    animation: pulse 1.2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.7; }
+  }
+
+  .buy-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  .buy-btn:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255,255,255,0.7);
+  }
+
+  #cursor-bloom {
+    position: fixed;
+    left: 0; top: 0;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.7);
+    box-shadow: 0 0 8px rgba(255,255,255,0.5), 0 0 16px rgba(255,255,255,0.3);
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 10px;
+    pointer-events: none;
+    z-index: 1500;
+    opacity: 0.8;
+  }
+</style>
+</head>
+<body>
+
+<video id="video-bg" class="video-bg" loop playsinline>
+  <source id="video-source" type="video/mp4">
+</video>
+
+<div class="fade-overlay" id="fade-overlay"></div>
+
+<div class="content">
+  <h1>FurryCore Store</h1>
+  <h2>Exclusive digital products & content</h2>
+  <div class="products">
+    <div class="product">
+      <div class="product-inner">
+        <img src="src/fcvrc.png" alt="FC VRC Lifetime">
+        <h3>FC - VRC - Lifetime</h3>
+        <div class="price">$10</div>
+        <div class="stock">In Stock:5 left</div>
+        <a class="buy-btn" href="https://furrycore.sell.app/product/product-1755681038?store=furrycore&quantity=1">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="cursor-bloom"></div>
+
+<script>
+const video = document.getElementById('video-bg');
+const source = document.getElementById('video-source');
+const overlay = document.getElementById('fade-overlay');
+const cursor = document.getElementById('cursor-bloom');
+
+const videos = [
+  "https://files.catbox.moe/golu9l.mp4",
+  "https://files.catbox.moe/h37qx1.mp4",
+  "https://files.catbox.moe/3l4gdl.mp4"
+];
+source.src = videos[Math.floor(Math.random() * videos.length)];
+video.load();
+
+let started = false;
+function startExperience() {
+  if (started) return;
+  started = true;
+
+  video.muted = false;
+  video.play().then(() => {
+    video.style.opacity = 1;
+    overlay.style.opacity = 0;
+  }).catch(err => console.warn("Video play blocked:", err));
+
+  cursor.style.opacity = 1;
+
+  let mouseX = 0, mouseY = 0;
+  let bloomX = 0, bloomY = 0;
+  document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+  function animateBloom() {
+    bloomX += (mouseX - bloomX) * 0.15;
+    bloomY += (mouseY - bloomY) * 0.15;
+    cursor.style.left = bloomX + 'px';
+    cursor.style.top = bloomY + 'px';
+    requestAnimationFrame(animateBloom);
+  }
+  animateBloom();
+
+  const snowflakes = [];
+  const maxSnow = 40;
+  function createSnowflake() {
+    const snow = document.createElement('div');
+    snow.className = 'snowflake';
+    snow.innerText = '❄';
+    snow.style.left = Math.random() * window.innerWidth + 'px';
+    snow.style.fontSize = 6 + Math.random() * 10 + 'px';
+    document.body.appendChild(snow);
+    snowflakes.push({ el: snow, x: parseFloat(snow.style.left), y: -10, speed: 1 + Math.random() * 2, drift: (Math.random() - 0.5) * 1.5 });
+  }
+  for(let i=0;i<maxSnow;i++) createSnowflake();
+  function animateSnow() {
+    snowflakes.forEach(f => {
+      f.y += f.speed; f.x += f.drift;
+      if(f.y > window.innerHeight) { f.y = -10; f.x = Math.random() * window.innerWidth; }
+      f.el.style.top = f.y + 'px'; f.el.style.left = f.x + 'px';
+    });
+    requestAnimationFrame(animateSnow);
+  }
+  animateSnow();
+}
+
+document.addEventListener('mousemove', startExperience, { once: true });
+document.addEventListener('touchstart', startExperience, { once: true });
+
+document.querySelectorAll('.product').forEach(product => {
+  const inner = product.querySelector('.product-inner');
+  product.addEventListener('mousemove', e => {
+    const rect = product.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * 10;
+    const rotateY = ((x - centerX) / centerX) * 10;
+    inner.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+  });
+  product.addEventListener('mouseleave', () => {
+    inner.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
+  });
+});
+</script>
+</body>
+</html>
