@@ -78,7 +78,7 @@ Read the `Usage` section to get started.
 
 
 <!-- ROADMAP -->
-## Roadmap
+## 💹 Roadmap
 
 - [x] Add Games Section
 - [x] Add DLC's Section
@@ -88,7 +88,7 @@ Read the `Usage` section to get started.
     - [ ] Chinese
     - [ ] Spanish
 
-## Acknowledgments
+## 📜 Acknowledgments
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
@@ -102,7 +102,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
 <!-- CONTRIBUTING -->
-## Contributing
+## 💡 Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
