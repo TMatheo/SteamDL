@@ -38,7 +38,7 @@ Why should I use it?:
 * 🕹️ You want to try some of these games before buying them. 😇 (Please buy them) 😇
 * 🤷 The game you want is no longer in your Steam library. 🤷
 
-<h3 align="center">‼️ Of course, we do not provide any support for pirated games and DLCs. It is your responsibility if any of your content is not functional.‼️</h3>
+<h3 align="center">‼️ Of course, we do not provide any kind of support for pirated games and DLCs. It is your responsibility if any of your content is not functional.‼️</h3>
 
 Use the `BLANK_README.md` to get started.
 
