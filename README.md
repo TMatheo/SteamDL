@@ -60,11 +60,11 @@ Read the `Usage` section to get started.
 
 <h3 align="center">📩 To use Steam_DL, launch ‘Steam_DL.exe’ and :. </h3>
 
-* 💾 If you choose option 1, type in the name of your game to check if it is in our database. If it is, just type in the number next to the name of your game and press Enter to start the backup. Your Steam should restart. Then go to your Steam Library and you should find your game by typing its name.
+* 💾 If you choose to press 1, type in the name of your game to check if it is in our database. If it is, just type in the number next to the name of your game and press Enter to start the backup. Your Steam should restart. Then go to your Steam Library and you should find your game by typing its name.
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-* 💾 If you choose option 2, you will need to enter your game ID number yourself. To do this, go to the Steam Store and go to your game's page, and retrieve the numbers found here, in place of the “x” `(https://store.steampowered.com/app/'xxxxxxx'/ARC_Raiders/)`. Once you have copied these numbers, simply paste them into the tool, your Steam will restart, and you will be able to find the game in your Steam Library.
+* 💾 If you choose to press 2, you will need to enter your game ID number yourself. To do this, go to the Steam Store and go to your game's page, and retrieve the numbers found here, in place of the “x” `(https://store.steampowered.com/app/'xxxxxxx'/ARC_Raiders/)`. Once you have copied these numbers, simply paste them into the tool, your Steam will restart, and you will be able to find the game in your Steam Library.
 
 ## 🛠️ Built With 
 
