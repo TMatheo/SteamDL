@@ -13,7 +13,7 @@
   <p align="center">
     A simple Client to Server Software that can download your games from Steam by their ID's !
     <br />
-    <a href="https://github.com/TMatheo/FileHost/tree/main"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/TMatheo/FileHost/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
