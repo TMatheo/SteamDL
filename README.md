@@ -32,9 +32,9 @@
 Steam_DL is a simple tool for downloading game files and DLCs directly from servers on the Steam platform.
 
 Why should I use it?:
-* Verifying your game files via Steam is not working, either due to maintenance or for some other reason.
-* You want to try some of these games before buying them. (Please buy them)
-* You should implement DRY principles to the rest of your life :smile:
+* 🔧 Verifying your game files via Steam is not working, either due to maintenance or for some other reason. 🔧
+* 🕹️ You want to try some of these games before buying them. 😇 (Please buy them) 😇
+* 🤷 The game you want is no longer in your Steam library. 🤷
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
