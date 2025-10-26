@@ -55,7 +55,7 @@ Read the `Usage` section to get started.
 
 ## ✅ Supported Versions of Windows
 
-* Windows 11 25H2 ❌ (This version is blocking Anti-DRM games)
+* Windows 11 25H2 ❌ (This version is blocking Anti-DRM games/Microsoft says DRM-Protected content may not play)
 * Windows 11 24H2 ✅
 * Windows 11 23H2 ✅
 * All Windows 10 Versions ✅
