@@ -10,7 +10,16 @@ Hallo and Guten Tag
 
 SteamDL is an Open Source File Source Steam Downloader
 
+<!-- ROADMAP -->
+## Roadmap
 
+- [x] Add Games Section
+- [x] Add DLC's Section
+- [ ] Add an auto compiler
+- [ ] Add the Online-Fix support for Online Games
+- [ ] Multi-language Support
+    - [ ] Chinese
+    - [ ] Spanish
 
 ## Acknowledgments
 
