@@ -32,7 +32,7 @@
 Steam_DL is a simple tool for downloading game files and DLCs directly from servers on the Steam platform.
 
 Why should I use it?:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
+* Verifying your game files via Steam is not working, either due to maintenance or for some other reason.
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
 * You should implement DRY principles to the rest of your life :smile:
 
