@@ -1,11 +1,28 @@
 BoneLab:1592190
 BONEWORKS:823500
-Skyrim:72850
-Skyrim Special Edition:489830
-Skyrim VR:611670
+The Elder Scrolls - Arena:1812290
+The Elder Scrolls II - Daggerfall:1812390
+The Elder Scrolls Adventures - Redguard:1812410
+The Elder Scrolls III - Morrowind® Game of the Year Edition:22320
+The Elder Scrolls IV - Oblivion® Remastered (2025):2623190
+The Elder Scrolls IV - Oblivion® - Game of the Year Edition (2009):22330
+The Elder Scrolls V - Skyrim:72850
+The Elder Scrolls V - Skyrim - Special Edition:489830
+The Elder Scrolls V - Skyrim VR:611670
+The Elder Scrolls VI (SOON):00000
+An Elder Scrolls Legend - Battlespire:1812420
 Stray:1332010
 Blade & Sorcery:629730
 Beat Saber:620980
+Fallout - A Post Nuclear Role Playing Game:38400
+Fallout 2 - A Post Nuclear Role Playing Game:38410
+Fallout Tactics - Brotherhood of Steel:38420
+Fallout 3 - Game of the Year Edition:22370
+Fallout - New Vegas:22380
+Fallout 4:377160
+Fallout 4 VR:611660
+Fallout 76:1151340
+Fallout Shelter:588430
 SUPERHOT:322500
 OVR Toolkit:1068820
 OVR Advanced Settings:1009850
@@ -28,6 +45,7 @@ Outlast:238320
 Cyberpunk 2077:1091500
 ELDEN RING:1245620
 Escape Simulator:1435790
+Euro Truck Simulator:232010
 Euro Truck Simulator 2:227300
 Five Nights at Freddy's:319510
 Five Nights at Freddy's 2:332800
@@ -42,7 +60,7 @@ Just Cause:6880
 Just Cause 2:8190
 Just Cause 3:225540
 Just Cause 4:517630
-Ms Flight Simulator 24:2537590
+Microsoft Flight Simulator 2024:2537590
 OneShot WME:2915460
 Ori ATWOTW:1057090
 Outlast II:414700
@@ -53,8 +71,11 @@ Resident Evil Village:1196590
 SchoolBoy Runaway:3359320
 Slime Rancher:433340
 Slime Rancher 2:1657630
+The Forest:242760
 Sons Of The Forest:1326470
 Squad:393380
 Subnautica:264710
-Subnautica 2:1962700
+Subnautica 2 (SOON):1962700
+Insurgency:222880
+Insurgency - Sandstorm:581320
 
