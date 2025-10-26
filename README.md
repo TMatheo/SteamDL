@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="http://www.image-heberg.fr/files/17615076561733771027.png" alt="Logo" width="80" height="80">
+    <img src="http://www.image-heberg.fr/files/17615076561733771027.png" alt="Logo" width="1024" height="720">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
