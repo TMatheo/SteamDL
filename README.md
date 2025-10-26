@@ -60,7 +60,7 @@ Use the `BLANK_README.md` to get started.
 - [x] Add Games Section
 - [x] Add DLC's Section
 - [ ] Add an auto compiler
-- [ ] Add the Online-Fix support for Online Games
+- [ ] Add more Add-ons
 - [ ] Multi-language Support
     - [ ] Chinese
     - [ ] Spanish
