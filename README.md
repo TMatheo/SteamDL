@@ -60,6 +60,8 @@ Read the `Usage` section to get started.
 * Windows 11 23H2 ✅
 * All Windows 10 Versions ✅
 
+* Denuvo DRM Protected Games are currently not working under our tool. ❌
+
 
 <!-- USAGE EXAMPLES -->
 ## 📲 Usage
