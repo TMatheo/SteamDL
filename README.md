@@ -53,6 +53,12 @@ Read the `Usage` section to get started.
 
 
 
+## ✅ Supported Versions
+
+* Windows 11 25H2 ❌
+* Windows 11 24H2 ✅
+* Windows 11 23H2 ✅
+* All Windows 10 Versions ✅
 
 
 <!-- USAGE EXAMPLES -->
