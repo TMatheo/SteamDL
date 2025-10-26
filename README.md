@@ -64,6 +64,8 @@ Read the `Usage` section to get started.
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+* 💾 If you choose option 2, you will need to enter your game ID number yourself. To do this, go to the Steam Store and go to your game's page, and retrieve the numbers found here, in place of the “x” '(https://store.steampowered.com/app/'xxxxxxx'/ARC_Raiders/)'. Once you have copied these numbers, simply paste them into the tool, your Steam will restart, and you will be able to find the game in your Steam Library.
+
 ## 🛠️ Built With 
 
 [![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff)](#) C#
