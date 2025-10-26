@@ -58,11 +58,9 @@ Read the `Usage` section to get started.
 <!-- USAGE EXAMPLES -->
 ## 📲 Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+<h3 align="center">To use Steam_DL, launch ‘Steam_DL.exe’. </h3>
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
+* At this point, you have two options. If you choose option 1, type in the name of your game to check if it is in our database. If it is, just type in the number next to the name of your game to start the backup. Your Steam should restart. Then go to your Steam Library and you should find your game by typing its name.
 
 
 ## 🛠️ Built With 
