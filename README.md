@@ -47,10 +47,7 @@ Why should I use it?:
 Read the `Usage` section to get started.
 
 
-😇 By the way, if you thing this tool is missing something, tell us in the issue category 😇
-
-
-## ⚠️ Important Note to users 
+⚠️ Important Note to users 
 
 <h3 align="center">⚠️ Attention, this tool does not work if you have more than 1 active steam account on your computer ⚠️ </h3>
 
