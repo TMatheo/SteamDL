@@ -16,7 +16,7 @@
     <a href="https://github.com/TMatheo/FileHost/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/TMatheo/FileHost/blob/main/README.md">View Demo</a>
     &middot;
     <a href="https://github.com/TMatheo/FileHost/issues/new">Report Bug</a>
     &middot;
