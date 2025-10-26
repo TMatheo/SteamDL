@@ -57,6 +57,6 @@ Don't forget to give the project a star! Thanks again!
 
 
 [contributors-url]: https://github.com/TMatheo/FileHost/graphs/contributors
-[contributors-shield]: [![Bruno](https://img.shields.io/badge/Bruno-F4AA41?logo=Bruno&logoColor=black)](#)
+[contributors-shield]: https://img.shields.io/badge/Bruno-F4AA41?logo=Bruno&logoColor=black
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
