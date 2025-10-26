@@ -49,7 +49,7 @@ Read the `Usage` section to get started.
 
 ⚠️ Important Note to users 
 
-<h3 align="center">⚠️ Attention, this tool does not work if you have still the multiple account loggin checked in Steam ⚠️ </h3>
+<h3 align="center">⚠️ Attention, this tool does not work if you have still the multiple account loggin window checked in Steam ⚠️ </h3>
 
 
 
