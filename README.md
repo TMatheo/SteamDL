@@ -38,7 +38,7 @@ Why should I use it?:
 * 🕹️ You want to try some of these games before buying them. 😇 (Please buy them) 😇
 * 🤷 The game you want is no longer in your Steam library. 🤷
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+<h3 align="center">‼️ Of course, we do not provide any support for pirated games and DLCs. It is your responsibility if any of your content is not functional.‼️</h3>
 
 Use the `BLANK_README.md` to get started.
 
