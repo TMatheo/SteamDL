@@ -44,7 +44,7 @@ Use the `BLANK_README.md` to get started.
 
 ## ⚠️ Important Note to users ⚠️
 
-<h3 align="center">‼️Attention, this tool does not work if you have several steam accounts on your computer‼️</h3>
+<h3 align="center">‼️Attention, this tool does not work if you have more than 1 active steam account on your computer‼️</h3>
 
 ## 🛠️ Built With 🛠️
 
