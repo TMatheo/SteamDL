@@ -20,7 +20,7 @@
     &middot;
     <a href="https://github.com/TMatheo/FileHost/issues/new">Report Bug</a>
     &middot;
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/TMatheo/FileHost/compare">Request Feature</a>
   </p>
 </div>
 
