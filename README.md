@@ -25,7 +25,7 @@
 </div>
 
 <!-- ABOUT THE PROJECT -->
-## 📋 About The Project 📋
+## 📋 About The Project 
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
@@ -45,17 +45,17 @@ Use the `BLANK_README.md` to get started.
 
 
 
--
-## ⚠️ Important Note to users ⚠️
+
+## ⚠️ Important Note to users 
 
 <h3 align="center">⚠️ Attention, this tool does not work if you have more than 1 active steam account on your computer ⚠️ </h3>
--
 
 
 
--
+
+
 <!-- USAGE EXAMPLES -->
-## Usage
+## 📲 Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -67,7 +67,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-## 🛠️ Built With 🛠️
+## 🛠️ Built With 
 
 [![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff)](#) C#
 
