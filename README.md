@@ -43,7 +43,7 @@ Why should I use it?:
 
 <!-- ABOUT THE PROJECT -->
 <h3 align="center">‼️ Of course, we do not provide any kind of support for pirated games and DLCs. It is your responsibility if any of your content is not functional.‼️</h3>
-<h3 align="center">‼️ Multiplayer games are really not recommended to be played, if you want to play online, try to find a patch ‼️</h3>
+<h3 align="center">‼️ Multiplayer games are really not recommended to be played, if you want to play online, try to find a patch. We are not responsible about Online Games Bans ‼️</h3>
 
 Read the `Usage` section to get started.
 
