@@ -4,3 +4,5 @@ Skyrim:72850
 Skyrim Special Edition:489830
 Blade & Sorcery:629730
 Beat Saber:620980
+OVR Toolkit:1068820
+OVR Advanced Settings:1009850
