@@ -40,10 +40,10 @@ Why should I use it?:
 
 <h3 align="center">‼️ Of course, we do not provide any kind of support for pirated games and DLCs. It is your responsibility if any of your content is not functional.‼️</h3>
 
-Use the `BLANK_README.md` to get started.
+Read the `Usage` section to get started.
 
 
-
+😇 By the way, if you thing this tool is missing something, tell us in the issue category 😇
 
 
 ## ⚠️ Important Note to users 
