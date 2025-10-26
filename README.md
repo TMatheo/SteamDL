@@ -1,6 +1,6 @@
 <a id="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
+[![CB](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visualstudio&logoColor=white)](#)
 
 
 <!-- About This Project -->
@@ -55,8 +55,5 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-
-[contributors-url]: https://github.com/TMatheo/FileHost/graphs/contributors
-[contributors-shield]: https://img.shields.io/badge/Bruno-F4AA41?logo=Bruno&logoColor=black
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
