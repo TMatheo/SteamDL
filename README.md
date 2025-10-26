@@ -53,7 +53,7 @@ Read the `Usage` section to get started.
 
 
 
-## ✅ Supported Versions
+## ✅ Supported Versions of Windows
 
 * Windows 11 25H2 ❌ (This version is blocking Anti-DRM games)
 * Windows 11 24H2 ✅
