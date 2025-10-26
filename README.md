@@ -90,8 +90,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/SteamDL`)
 5. Open a Pull Request
 
-[product-screenshot]: http://www.image-heberg.fr/files/17615081924134016035.jpg
-
+[product-screenshot]: http://www.image-heberg.fr/files/17615089663670436384.gif
 
 
 
