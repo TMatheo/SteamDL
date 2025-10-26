@@ -1,4 +1,8 @@
 <a id="readme-top"></a>
+
+[![Contributors][contributors-shield]][contributors-url]
+
+
 <!-- About This Project -->
 ## About This Project
 
@@ -52,6 +56,6 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-
+[contributors-url]: https://github.com/TMatheo/FileHost/graphs/contributors
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
