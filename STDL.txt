@@ -2,6 +2,7 @@
 Assetto Corsa:244210
 Backrooms - Escape Together:2141730
 BALL x PIT:2062430
+Baldur's Gate 3:1086940
 Battlefield 1 (2016):1238840
 Battlefield 3:1238820
 Battlefield 4:1238860
@@ -14,6 +15,12 @@ BeamNG.Drive:284160
 Blade & Sorcery:629730
 BoneLab:1592190
 BONEWORKS:823500
+Borderlands - The Pre-Sequel:261640
+Borderlands - Game of the Year Enhanced (2009):729040
+Borderlands 2:49520
+Borderlands 2 VR:991260
+Borderlands 3:397540
+Borderlands 4:1285190
 Buckshot Roulette:2835570
 Bully: Scholarship Edition:12200
 Call of Duty 2:2630
@@ -33,6 +40,7 @@ DARK SOULS - REMASTERED:270940
 DARK SOULS II:236430
 DARK SOULS II - Scholar of the First Sin:335300
 DARK SOULS III:374320
+Digimon Story Time Stranger:1984270
 Dying Light (2015):239140
 Dying Light 2 Stay Human - Reloaded Edition:534380
 Dying Light: The Beast:3008130
@@ -72,6 +80,8 @@ Grand Theft Auto V - Enhanced Edition:3240220
 Grand Theft Auto VI (SOON):69
 Hades:1145360
 Hades II:1145350
+Hollow Knight:367520
+Hollow Knight - Silksong:1030300
 Hogwarts Legacy:990080
 Inside the Backrooms:1987080
 Insurgency:222880
@@ -118,6 +128,8 @@ Stray:1332010
 Subnautica:264710
 Subnautica 2 (SOON):1962700
 SUPERHOT:322500
+Tales from the Borderlands:330830
+Tiny Tina's Assault on Dragon Keep:1712840
 The Forest:242760
 The Elder Scrolls - Arena:1812290
 The Elder Scrolls II - Daggerfall:1812390
