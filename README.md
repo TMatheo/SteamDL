@@ -62,6 +62,7 @@ Read the `Usage` section to get started.
 
 * At this point, you have two options. If you choose option 1, type in the name of your game to check if it is in our database. If it is, just type in the number next to the name of your game to start the backup. Your Steam should restart. Then go to your Steam Library and you should find your game by typing its name.
 
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 ## 🛠️ Built With 
 
