@@ -8,7 +8,7 @@
     <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczIybXUzaDZpbGQ4ZWN3NGFjeGEzNWV3bnRnZHI3aTNnbHhlbDZ4eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lHl6b8tjmhd5CP61HY/giphy.gif" alt="Logo" width="800" height="500">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">- Steam_DL -</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
