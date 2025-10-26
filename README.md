@@ -29,7 +29,9 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+<p align="center">
 Steam_DL is a simple tool for downloading game files and DLCs directly from servers on the Steam platform.
+</p>
 
 Why should I use it?:
 * 🔧 Verifying your game files via Steam is not working, either due to maintenance or for some other reason. 🔧
