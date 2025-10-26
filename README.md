@@ -25,9 +25,6 @@
 </div>
 
 
-[![CB](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visualstudio&logoColor=white)](#)
-
-
 <!-- About This Project -->
 ## About This Project
 
