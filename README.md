@@ -66,7 +66,7 @@ Read the `Usage` section to get started.
 
 <h3 align="center">📩 To use Steam_DL, launch ‘Steam_DL.exe’ and :. </h3>
 
-* 💾 First of all you will to have [Steam Tools](https://steamtools.net/download.html#) installed on your computer to get it to work.
+* 💾 First of all you will need to have [Steam Tools](https://steamtools.net/download.html#) installed on your computer to get it to work.
 
 * 💾 If you choose to press 1, type in the name of your game to check if it is in our database. If it is, just type in the number next to the name of your game and press Enter to start the backup. Your Steam should restart. Then go to your Steam Library and you should find your game by typing its name.
 
