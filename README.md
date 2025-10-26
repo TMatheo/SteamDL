@@ -11,7 +11,7 @@
   <h3 align="center">♨️- Steam_DL -♨️</h3>
 
   <p align="center">
-    ! A simple Client to Server Software that can download your games from Steam by their ID's !
+    📜! A simple Client to Server Software that can download your games from Steam by their ID's !📜
     <br />
     <a href="https://github.com/TMatheo/FileHost/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
