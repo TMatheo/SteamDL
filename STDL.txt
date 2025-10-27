@@ -23,8 +23,11 @@ Borderlands 3:397540
 Borderlands 4:1285190
 Buckshot Roulette:2835570
 Bully: Scholarship Edition:12200
+Call of Duty (2003):2620
 Call of Duty 2:2630
+Call of Duty - World at War:10090
 Call Of Duty 4 - Modern Warfare (2007):7940
+Call of Duty 4 - Modern Warfare Remastered (2017):393080
 Call of Duty - Modern Warfare 2 (2009):10180
 Call of Duty - Modern Warfare 3 (2011):115300
 Call of Duty - Black Ops:42700
@@ -33,6 +36,7 @@ Call of Duty - Black Ops III:311210
 Call of Duty - Ghosts:209160
 Call of Duty - Advanced Warfare:209650
 Call of Duty - Infinite Warfare:292730
+Call of Duty - WWII:476600
 Clair Obscur - Expedition 33:1903340
 Content Warning:2881650
 Cyberpunk 2077:1091500
