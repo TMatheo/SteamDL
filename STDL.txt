@@ -109,6 +109,8 @@ PowerWash Simulator 2:2968420
 Prison Architect:233450
 Prison Architect 2 (SOON):1257610
 Raft:648800
+RainWallpaper:979560
+Rain World:312520
 Red Dead Redemption (2010):2668510
 Red Dead Redemption 2:1174180
 Resident Evil 4:2050650
@@ -116,6 +118,7 @@ Resident Evil 7:418370
 Resident Evil Village:1196590
 RimWorld:294100
 RV There Yet?:3949040
+SoundPad:629520
 Satisfactory:526870
 Scrap Mechanic:387990
 SchoolBoy Runaway:3359320
