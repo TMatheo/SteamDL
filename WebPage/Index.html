@@ -7,7 +7,20 @@
 <style>
 /* Reset & Base */
 * { margin:0; padding:0; box-sizing:border-box; }
-html, body { width:100%; height:100%; font-family:Arial, sans-serif; overflow:hidden; cursor:none; color:#fff; background-color:#000; }
+html, body { 
+background-image: url('src/bg.png'); 
+width:100%; h
+eight:100%; 
+font-family:Arial, 
+sans-serif; 
+overflow:hidden; 
+cursor:none;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed; 
+color:#fff; 
+background-color:#000; }
 
 /* RTX Glowing Border */
 body::before {
@@ -116,10 +129,39 @@ p{
   box-shadow:0 0 20px #66ccff,0 0 40px #00bfff,0 0 80px #3399ff; mix-blend-mode:screen;
   transition:width 0.2s ease,height 0.2s ease,opacity 0.3s ease; z-index:2000;
 }
+
+/* Piracy Warning Overlay */
+#piracy-warning {
+  position:fixed; top:0; left:0; width:100%; height:100%;
+  display:flex; justify-content:center; align-items:center;
+  background:rgba(0,0,0,0.9); color:#ff5555; font-size:2rem;
+  font-weight:bold; text-align:center; z-index:9999;
+  opacity:1; transition: opacity 1s ease;
+}
+
 @media(max-height:700px){.container{position:relative;top:auto;left:auto;transform:none;margin:auto;}}
 </style>
 </head>
 <body>
+
+<!-- Piracy Warning -->
+<div id="piracy-warning" style="
+  position:fixed; top:0; left:0; width:100%; height:100%;
+  display:flex; flex-direction:column; justify-content:center; align-items:center;
+  background:rgba(0,0,0,0.9); color:#ffcc55; font-size:1.8rem;
+  font-weight:bold; text-align:center; z-index:9999; opacity:1; transition: opacity 1s ease;
+  padding:2rem;
+">
+  <div style="margin-bottom:1rem;">
+    ⚠️ Piracy is illegal and make game dev poor! ⚠️
+  </div>
+  <div style="margin-bottom:1rem;">
+    Support the developers by buying there game legally thanks you.
+  </div>
+    <div style="margin-bottom:1rem;">
+    This is only here for testing game before buying it, and not for pirating them.
+  </div>
+</div>
 
 <!-- Background Audio -->
 <audio id="bg-audio" loop>
@@ -177,6 +219,13 @@ p{
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
+// Piracy Warning fade out
+setTimeout(() => {
+  const warning = document.getElementById('piracy-warning');
+  if (warning) warning.style.opacity = '0';
+  setTimeout(() => warning.style.display='none', 1000);
+}, 5000);
+
 // Cursor bloom
 const cursor = document.getElementById('cursor-bloom');
 let mouse={x:0,y:0},bloom={x:0,y:0},targetSize=28;
@@ -280,4 +329,3 @@ function updateStatsChart() {
 
 </body>
 </html>
-
