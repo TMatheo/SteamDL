@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://i.ibb.co/VWZYS8XH/BGG.png" alt="Logo" width="800" height="500">
+    <img src="https://i.ibb.co/VWZYS8XH/BGG.png" alt="Logo" width="1204" height="800">
   </a>
 
   <h3 align="center">♨️- Steam_DL -♨️</h3>
