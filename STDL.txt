@@ -1,6 +1,8 @@
 911 Operator:503560
 Assetto Corsa:244210
 Assetto Corsa Competizione:805550
+Assetto Corsa EVO:3058630
+Assetto Corsa Rally (SOON):3917090
 A Way Out:1222700
 A Dance of Fire and Ice:977950
 BlackMyth Wukong:2358720
@@ -44,6 +46,9 @@ Call of Duty - Infinite Warfare:292730
 Call of Duty - WWII:476600
 Clair Obscur - Expedition 33:1903340
 Content Warning:2881650
+Counter-Strike:10
+Counter-Strike - Condition Zero:80
+Counter-Strike - Source:240
 Cyberpunk 2077:1091500
 DARK SOULS - REMASTERED:270940
 DARK SOULS II:236430
@@ -77,6 +82,7 @@ Five Nights at Freddy's 4:388090
 Five Nights at Freddy's - Sister Location:506610
 Five Nights at Freddy's - Security Breach:747660
 Gang Beasts:285900
+Garry's Mod:4000
 Geometry Dash:322170
 God of War:1593500
 God of War Ragnarök:2322010
@@ -89,6 +95,13 @@ Grand Theft Auto V - Enhanced Edition:3240220
 Grand Theft Auto VI (SOON):69
 Hades:1145360
 Hades II:1145350
+Half-Life:70
+Half-Life - Opposing Force:50
+Half-Life - Blue Shift:130
+Half-Life 2:220
+Half-Life 2 - Episode One:380
+Half-Life 2 - Episode Two:420
+Half-Life 2 - Lost Coast:340
 Hollow Knight:367520
 Hollow Knight - Silksong:1030300
 Hogwarts Legacy:990080
@@ -114,10 +127,13 @@ Outlast II:414700
 OVR Toolkit:1068820
 OVR Advanced Settings:1009850
 PEAK:3527290
+Portal:400
+Portal 2:620
 PowerWash Simulator:1290000
 PowerWash Simulator 2:2968420
 Prison Architect:233450
 Prison Architect 2 (SOON):1257610
+Qui Veut Gagner Des Millions ?:1356240
 Raft:648800
 RainWallpaper:979560
 Rain World:312520
