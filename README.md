@@ -57,7 +57,7 @@ Read the `Usage` section to get started.
 
 ## ✅ Supported OS Versions
 
-<h3 align="center"> 🪟 Windows :</h3>
+<h3> 🪟 Windows :</h3>
 
 * Windows 11 25H2 🕑 Working on a Fix (This version is blocking Anti-DRM games/Microsoft says DRM-Protected content may not play)
 * Windows 11 24H2 ✅
