@@ -44,6 +44,7 @@ Why should I use it?:
 <!-- ABOUT THE PROJECT -->
 <h3 align="center">‼️ Of course, we do not provide any kind of support for pirated games and DLCs. It is your responsibility if any of your content is not functional.‼️</h3>
 <h3 align="center">‼️ Multiplayer games are really not recommended to be played, if you want to play online, try to find a patch. We are not responsible about Online Games Bans ‼️</h3>
+<h3 align="center">‼️ Denuvo DRM Protected Games are currently not working under our tool, we will not provide any solution about this ‼️</h3>
 
 Read the `Usage` section to get started.
 
@@ -56,12 +57,10 @@ Read the `Usage` section to get started.
 
 ## ✅ Supported Versions of Windows
 
-* Windows 11 25H2 ❌ +Cannot Be Patched for now (This version is blocking Anti-DRM games/Microsoft says DRM-Protected content may not play)
+* Windows 11 25H2 🕑 Working on a Fix (This version is blocking Anti-DRM games/Microsoft says DRM-Protected content may not play)
 * Windows 11 24H2 ✅
 * Windows 11 23H2 ✅
 * All Windows 10 Versions ✅
-
-* Denuvo DRM Protected Games are currently not working under our tool. ❌
 
 
 <!-- USAGE EXAMPLES -->
