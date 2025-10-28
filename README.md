@@ -104,7 +104,7 @@ Read the `Usage` section to get started.
 ## 📜 Terms of Services
 
 Any illegal reproduction of this product is prohibited, we are not represented by Steam or Valve, the use of this software depends on you, not us.
-We do not provide any kind of support on games that have been downloaded with our Utility. Please refer to
+We do not provide any kind of support on games that have been downloaded with our Utility. Please refer to [About this Project](https://github.com/TMatheo/SteamDL/blob/main/README.md#-about-the-project) section for more informations.
 
 * [Steam Terms Of Services](https://store.steampowered.com/eula/471710_eula_0)
 
