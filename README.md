@@ -64,11 +64,11 @@ Read the `Usage` section to get started.
 * Windows 11 23H2 ✅
 * All Windows 10 Versions ✅
 
-🐧 Linux :
+<h3> 🐧 Linux :</h3>
 
 * All BSD, Debian, UNIX OS are currently not working right now ❌
 
-👀 Rog Ally :
+<h3>👀 Rog Ally :</h3>
 
 1.0.0 => Latest ✅
 
