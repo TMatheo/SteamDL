@@ -122,6 +122,7 @@ Resident Evil 7:418370
 Resident Evil Village:1196590
 RimWorld:294100
 RV There Yet?:3949040
+SnowRunner:1465360
 Standable: Full Body Estimation:
 SoundPad:629520
 Satisfactory:526870
