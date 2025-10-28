@@ -88,14 +88,18 @@ Read the `Usage` section to get started.
 
 <!-- ROADMAP -->
 ## 💹 Roadmap
-
+----------------------------
 - [x] Add Games Section
 - [x] Add DLC's Section
-- [ ] Add an auto compiler
-- [ ] Add more Add-ons
+- [x] Add an auto compiler
+- [x] Add more Add-ons
+- [x] SteamTools dependancies installed natively
 - [ ] Multi-language Support
+    - [x] English
+    - [ ] French 
     - [ ] Chinese
     - [ ] Spanish
+  -------------------------
 
 ## 📜 Acknowledgments
 
