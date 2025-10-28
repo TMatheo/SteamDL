@@ -70,7 +70,7 @@ Read the `Usage` section to get started.
 
 <h3>👀 Rog Ally :</h3>
 
-1.0.0 => Latest ✅
+* 1.0.0 => Latest ✅
 
 <!-- USAGE EXAMPLES -->
 ## 📲 Usage
