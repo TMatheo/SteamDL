@@ -109,7 +109,6 @@ Hogwarts Legacy:990080
 Inside the Backrooms:1987080
 Insurgency:222880
 Insurgency - Sandstorm:581320
-Just Dance 2017:446560
 Just Cause:6880
 Just Cause 2:8190
 Just Cause 3:225540
@@ -128,6 +127,7 @@ Outlast:238320
 Outlast II:414700
 OVR Toolkit:1068820
 OVR Advanced Settings:1009850
+Palworld:1623730
 PEAK:3527290
 Portal:400
 Portal 2:620
